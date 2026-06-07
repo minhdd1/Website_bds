@@ -1,0 +1,113 @@
+{
+  "Navigation": {
+    "home": "Trang chủ",
+    "properties": "Căn hộ",
+    "offices": "Văn phòng",
+    "areas": "Khu vực",
+    "journal": "Nhật ký sống",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "editorialRealEstate": "Bất động sản biên tập"
+  },
+  "Common": {
+    "price": "Giá",
+    "area": "Diện tích",
+    "bedrooms": "Phòng ngủ",
+    "bathrooms": "Phòng tắm",
+    "viewDetails": "Xem chi tiết",
+    "kaylaNote": "Ghi chú của Kayla",
+    "lifestyleMatch": "Đánh giá phong cách sống",
+    "consultation": "Đăng ký tư vấn",
+    "consultationDesc": "Để lại thông tin để nhận tư vấn trực tiếp từ Kayla Nguyen.",
+    "submitting": "Đang gửi...",
+    "submitSuccess": "Gửi thông tin thành công! Chúng tôi sẽ liên hệ lại sớm.",
+    "submitError": "Có lỗi xảy ra, vui lòng thử lại sau.",
+    "notAvailable": "Không có sẵn",
+    "furnished": "Nội thất",
+    "fullyFurnished": "Nội thất đầy đủ",
+    "partiallyFurnished": "Nội thất cơ bản",
+    "unfurnished": "Nhà trống",
+    "all": "Tất cả",
+    "apartment": "Căn hộ",
+    "office": "Văn phòng"
+  },
+  "Forms": {
+    "fullName": "Họ và tên",
+    "phone": "Số điện thoại",
+    "email": "Địa chỉ Email",
+    "message": "Nội dung lời nhắn",
+    "propertyType": "Loại hình bất động sản",
+    "apartment": "Căn hộ chung cư",
+    "office": "Văn phòng làm việc",
+    "submit": "Gửi yêu cầu"
+  },
+  "Footer": {
+    "tagline": "Một nơi khiến bạn muốn trở về.",
+    "copyright": "© 2026 Kayla Nguyen. Bản quyền được bảo lưu.",
+    "contactInfo": "Thông tin liên hệ",
+    "address": "Thảo Điền, Quận 2, TP. Hồ Chí Minh",
+    "navigation": "Danh mục",
+    "editorialSubtitle": "Bất động sản Biên tập • Câu chuyện không gian sống"
+  },
+  "Homepage": {
+    "heroTag": "Bất động sản Kayla Nguyen",
+    "heroTitle": "<large>Không gian</large> <small>phản chiếu</small> <large>phong cách sống</large>",
+    "heroSubtitle": "Tuyển tập những căn hộ và văn phòng chọn lọc mang đậm tính duy mỹ và bình yên.",
+    "featuredTitle": "Không gian nổi bật",
+    "featuredSubtitle": "Những căn hộ và văn phòng có thiết kế vượt thời gian, đầy đủ tiện ích và vị trí đắc địa.",
+    "journalTitle": "Nhật ký sống",
+    "journalSubtitle": "Chia sẻ những câu chuyện về không gian sống, ghi chép khu phố và góc nhìn nơi làm việc.",
+    "viewAllPosts": "Xem tất cả bài viết",
+    "areasTitle": "Cẩm nang khu vực",
+    "areasSubtitle": "Khám phá nhịp sống và bầu không khí đặc trưng tại các khu phố nổi bật ở Sài Gòn.",
+    "exploreArea": "Khám phá khu vực",
+    "aboutTag": "Triết lý tư vấn",
+    "aboutTitle": "Kể chuyện về không gian sống cùng Kayla Nguyen",
+    "aboutText1": "Chào bạn, tôi là Kayla Nguyen. Tôi không xem bất động sản đơn thuần là những giao dịch mua bán hay những khối bê tông vô hồn. Đối với tôi, mỗi căn hộ, mỗi văn phòng đều là một thực thể sống có câu chuyện riêng, phản chiếu phong cách sống và năng lượng của người sở hữu.",
+    "aboutText2": "Bằng lăng kính duy mỹ, điềm tĩnh và quan sát tinh tế, tôi mong muốn giúp bạn khám phá những không gian sống và làm việc thực sự kết nối với tâm hồn của bạn. Hãy cùng tôi viết nên những không gian sống đầy cảm xúc và bền vững theo thời gian.",
+    "aboutQuote": "Tôi tin rằng không gian sống tuyệt vời nhất là nơi mang lại cho bạn sự điềm tĩnh và tự do trong tâm hồn sau những xô bồ ngoài kia.",
+    "readMoreAbout": "Tìm hiểu về triết lý của tôi",
+    "viewAllProperties": "Xem tất cả không gian",
+    "connectTag": "Kết nối",
+    "connectTitle": "Tìm kiếm một không gian sống thuộc về riêng bạn?",
+    "connectText": "Mỗi căn nhà hay văn phòng đều có câu chuyện phát triển riêng biệt. Hãy chia sẻ với Kayla những mong muốn và lối sống của bạn, chúng ta sẽ cùng nhau tìm kiếm một không gian thực sự đồng điệu.",
+    "officeLocation": "📍 Thảo Điền, Quận 2, TP. Hồ Chí Minh"
+  },
+  "Properties": {
+    "tagline": "Tuyển chọn căn hộ",
+    "description": "Danh sách các căn hộ chung cư chọn lọc cao cấp, sở hữu thiết kế độc bản, nhiều ánh sáng tự nhiên và tọa lạc tại các vị trí yên tĩnh bậc nhất.",
+    "backToList": "Quay lại danh sách",
+    "detailsTitle": "Thông tin chi tiết",
+    "amenitiesTitle": "Tiện ích đi kèm",
+    "factsTitle": "Thông số căn hộ",
+    "contactCTA": "Liên hệ tư vấn căn hộ này"
+  },
+  "Offices": {
+    "tagline": "Không gian làm việc",
+    "description": "Tuyển tập các văn phòng làm việc và mặt bằng kinh doanh cao cấp, sở hữu thiết kế chuyên nghiệp, ánh sáng ngập tràn thúc đẩy tối đa tư duy sáng tạo cho đội ngũ của bạn.",
+    "detailsTitle": "Mô tả không gian làm việc",
+    "amenitiesTitle": "Dịch vụ & Tiện ích tòa nhà",
+    "lifestyleTitle": "Tiêu chuẩn phù hợp doanh nghiệp",
+    "factsTitle": "Thông số văn phòng",
+    "contactCTA": "Liên hệ thuê văn phòng này"
+  },
+  "Areas": {
+    "tagline": "Cẩm nang Sài Gòn",
+    "description": "Khám phá nhịp sống, không khí văn hóa và những đặc trưng bất động sản tại các khu phố đáng sống nhất.",
+    "exploreTag": "Cẩm nang khu phố",
+    "overviewTitle": "Tổng quan khu vực",
+    "atmosphereTitle": "Bầu không khí & Lối sống",
+    "whoIsItForTitle": "Khu phố này dành cho ai?",
+    "relatedPropertiesTitle": "Bất động sản nổi bật tại đây",
+    "noProperties": "Hiện tại chưa có bất động sản nào được đăng ký trong khu vực này.",
+    "detailsLink": "Chi tiết",
+    "backToList": "Quay lại cẩm nang",
+    "exploreArea": "Khám phá khu vực"
+  },
+  "Journal": {
+    "tagline": "Góc nhìn & Kể chuyện",
+    "description": "Nơi chia sẻ những bài viết chuyên sâu về kiến trúc, câu chuyện tìm kiếm tổ ấm, cảm nhận cuộc sống tại các khu phố và xu hướng thiết kế văn phòng.",
+    "readMore": "Đọc bài viết",
+    "backToList": "Quay lại nhật ký"
+  }
+}

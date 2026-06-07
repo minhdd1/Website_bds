@@ -1,0 +1,113 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "properties": "Apartments",
+    "offices": "Offices",
+    "areas": "Area Guides",
+    "journal": "Living Journal",
+    "about": "About",
+    "contact": "Contact",
+    "editorialRealEstate": "Editorial Real Estate"
+  },
+  "Common": {
+    "price": "Price",
+    "area": "Area",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "viewDetails": "View Details",
+    "kaylaNote": "Kayla Note",
+    "lifestyleMatch": "Lifestyle Match",
+    "consultation": "Book Consultation",
+    "consultationDesc": "Leave your information to receive a direct consultation from Kayla Nguyen.",
+    "submitting": "Submitting...",
+    "submitSuccess": "Submission successful! We will contact you soon.",
+    "submitError": "An error occurred, please try again later.",
+    "notAvailable": "Not available",
+    "furnished": "Furnishing",
+    "fullyFurnished": "Fully Furnished",
+    "partiallyFurnished": "Partially Furnished",
+    "unfurnished": "Unfurnished",
+    "all": "All",
+    "apartment": "Apartment",
+    "office": "Office"
+  },
+  "Forms": {
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Message content",
+    "propertyType": "Property Type",
+    "apartment": "Apartment",
+    "office": "Office Space",
+    "submit": "Submit Request"
+  },
+  "Footer": {
+    "tagline": "A place you'll love coming home to.",
+    "copyright": "© 2026 Kayla Nguyen. All rights reserved.",
+    "contactInfo": "Contact Info",
+    "address": "Thao Dien, District 2, Ho Chi Minh City",
+    "navigation": "Navigation",
+    "editorialSubtitle": "Editorial Real Estate • Living Space Stories"
+  },
+  "Homepage": {
+    "heroTag": "Kayla Nguyen Real Estate",
+    "heroTitle": "<large>Spaces</large> <small>reflecting</small> <large>your lifestyle</large>",
+    "heroSubtitle": "An editorial collection of handpicked apartments and office spaces defined by aesthetics and peace.",
+    "featuredTitle": "Featured Spaces",
+    "featuredSubtitle": "Carefully selected apartments and offices with timeless design, rich amenities, and prime locations.",
+    "journalTitle": "Living Journal",
+    "journalSubtitle": "Sharing stories about living spaces, neighborhood notes, and workplace insights.",
+    "viewAllPosts": "View All Articles",
+    "areasTitle": "Area Guides",
+    "areasSubtitle": "Explore the unique pulse and lifestyle of Saigon's most iconic neighborhoods.",
+    "exploreArea": "Explore Neighborhood",
+    "aboutTag": "Consultation Philosophy",
+    "aboutTitle": "Living Space Storytelling with Kayla Nguyen",
+    "aboutText1": "Hello, I am Kayla Nguyen. I do not view real estate simply as buying and selling transactions or soulless concrete blocks. For me, every apartment, every office is a living entity with its own story, reflecting the lifestyle and energy of its owner.",
+    "aboutText2": "Through an aesthetic, calm, and observant lens, my goal is to help you discover living and working spaces that truly connect with your soul. Let me join you in writing space stories that are emotional and timeless.",
+    "aboutQuote": "I believe the best living space is one that brings you calm and freedom in your soul after the bustle out there.",
+    "readMoreAbout": "Discover My Philosophy",
+    "viewAllProperties": "View All Spaces",
+    "connectTag": "Let's Connect",
+    "connectTitle": "Looking for a living space of your own?",
+    "connectText": "Every home or office has its own developmental story. Share your desires and lifestyle with Kayla, and we will find a space that truly resonates together.",
+    "officeLocation": "📍 Thao Dien, District 2, Ho Chi Minh City"
+  },
+  "Properties": {
+    "tagline": "Apartment Curation",
+    "description": "A curated list of premium apartments featuring unique designs, abundant natural light, and situated in the most peaceful locations.",
+    "backToList": "Back to Listings",
+    "detailsTitle": "Detailed Information",
+    "amenitiesTitle": "Included Amenities",
+    "factsTitle": "Apartment Facts",
+    "contactCTA": "Request consultation for this apartment"
+  },
+  "Offices": {
+    "tagline": "Workspace Collection",
+    "description": "A collection of premium offices and commercial spaces featuring professional designs and sunlit environments to maximize your team's creativity.",
+    "detailsTitle": "Workspace Description",
+    "amenitiesTitle": "Building Services & Amenities",
+    "lifestyleTitle": "Corporate Alignment Standards",
+    "factsTitle": "Office Facts",
+    "contactCTA": "Inquire about renting this office"
+  },
+  "Areas": {
+    "tagline": "Saigon Guides",
+    "description": "Discover the rhythm, cultural atmosphere, and real estate characteristics of the most livable neighborhoods.",
+    "exploreTag": "Neighborhood Guide",
+    "overviewTitle": "Area Overview",
+    "atmosphereTitle": "Atmosphere & Lifestyle",
+    "whoIsItForTitle": "Who is this neighborhood for?",
+    "relatedPropertiesTitle": "Featured Properties in this Area",
+    "noProperties": "There are currently no properties registered in this area.",
+    "detailsLink": "Details",
+    "backToList": "Back to Guides",
+    "exploreArea": "Explore Neighborhood"
+  },
+  "Journal": {
+    "tagline": "Perspectives & Storytelling",
+    "description": "A place for in-depth articles on architecture, home-hunting stories, neighborhood life, and office design trends.",
+    "readMore": "Read Article",
+    "backToList": "Back to Journal"
+  }
+}
