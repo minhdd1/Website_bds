@@ -21,6 +21,8 @@ export default function LanguageSwitcher() {
   return (
     <div className="flex items-center space-x-2 text-xs font-semibold tracking-wider">
       <button
+        type="button"
+        suppressHydrationWarning
         onClick={() => handleLanguageChange('vi')}
         className={`px-2 py-1 rounded transition-editorial ${
           currentLocale === 'vi'
@@ -33,6 +35,8 @@ export default function LanguageSwitcher() {
       </button>
       <span className="text-stone">/</span>
       <button
+        type="button"
+        suppressHydrationWarning
         onClick={() => handleLanguageChange('en')}
         className={`px-2 py-1 rounded transition-editorial ${
           currentLocale === 'en'

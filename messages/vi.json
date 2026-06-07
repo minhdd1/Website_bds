@@ -21,6 +21,8 @@
     "consultationDesc": "Để lại thông tin để nhận tư vấn trực tiếp từ Kayla Nguyen.",
     "submitting": "Đang gửi...",
     "submitSuccess": "Gửi thông tin thành công! Chúng tôi sẽ liên hệ lại sớm.",
+    "submitSuccessDesc": "Cảm ơn bạn đã tin tưởng. Kayla Nguyen sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
+    "sendAnother": "Gửi yêu cầu khác",
     "submitError": "Có lỗi xảy ra, vui lòng thử lại sau.",
     "notAvailable": "Không có sẵn",
     "furnished": "Nội thất",

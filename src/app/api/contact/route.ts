@@ -1,5 +1,33 @@
 import { NextResponse } from 'next/server';
 
+function getVietnamTimeString(): string {
+  const options = {
+    timeZone: 'Asia/Ho_Chi_Minh',
+    year: 'numeric' as const,
+    month: '2-digit' as const,
+    day: '2-digit' as const,
+    hour: '2-digit' as const,
+    minute: '2-digit' as const,
+    second: '2-digit' as const,
+    hour12: false
+  };
+
+  const formatter = new Intl.DateTimeFormat('en-US', options);
+  const parts = formatter.formatToParts(new Date());
+  
+  const partMap = parts.reduce((acc, part) => {
+    acc[part.type] = part.value;
+    return acc;
+  }, {} as Record<string, string>);
+
+  let hour = partMap.hour;
+  if (hour === '24') {
+    hour = '00';
+  }
+
+  return `${partMap.day}-${partMap.month}-${partMap.year} ${hour}:${partMap.minute}:${partMap.second}`;
+}
+
 /**
  * HƯỚNG DẪN CẤU HÌNH GOOGLE APPS SCRIPT CHO GOOGLE SHEET:
  * 
@@ -11,16 +39,33 @@ import { NextResponse } from 'next/server';
  * function doPost(e) {
  *   try {
  *     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+ *     
+ *     // Tự động tạo tiêu đề nếu trang tính mới hoàn toàn trống
+ *     if (sheet.getLastRow() === 0) {
+ *       sheet.appendRow([
+ *         "Họ và Tên",
+ *         "Số Điện Thoại",
+ *         "Email",
+ *         "Loại Bất Động Sản",
+ *         "Lời Nhắn / Yêu Cầu",
+ *         "Thời Gian Đăng Ký"
+ *       ]);
+ *       // Định dạng dòng tiêu đề: in đậm và tô nền xám nhạt cho đẹp mắt
+ *       var headerRange = sheet.getRange(1, 1, 1, 6);
+ *       headerRange.setFontWeight("bold");
+ *       headerRange.setBackground("#f3f3f3");
+ *     }
+ *     
  *     var data = JSON.parse(e.postData.contents);
  *     
  *     // Ghi các cột: Họ Tên, Số Điện Thoại, Email, Loại BĐS, Lời Nhắn, Thời Gian Gửi
  *     sheet.appendRow([
- *       data.fullName,
- *       data.phone,
- *       data.email,
- *       data.propertyType,
- *       data.message,
- *       data.submittedAt
+ *       data.fullName || "",
+ *       data.phone || "",
+ *       data.email || "",
+ *       data.propertyType || "",
+ *       data.message || "",
+ *       data.submittedAt || ""
  *     ]);
  *     
  *     return ContentService.createTextOutput(JSON.stringify({ "result": "success" }))
@@ -52,6 +97,7 @@ export async function POST(request: Request) {
     }
 
     const webhookUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK_URL || process.env.GOOGLE_SHEETS_WEBHOOK_URL;
+    const submittedAt = getVietnamTimeString();
 
     // Cơ chế fallback: Nếu chưa cấu hình Webhook URL, ghi log tại local console
     if (!webhookUrl) {
@@ -61,7 +107,7 @@ export async function POST(request: Request) {
       console.log('Email:', email);
       console.log('Loại BĐS:', propertyType === 'apartment' ? 'Căn hộ chung cư' : 'Văn phòng làm việc');
       console.log('Lời nhắn:', message);
-      console.log('Thời gian gửi:', new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }));
+      console.log('Thời gian gửi:', submittedAt);
       console.log('===============================================================');
 
       return NextResponse.json({
@@ -83,7 +129,7 @@ export async function POST(request: Request) {
         email,
         propertyType: propertyType === 'apartment' ? 'Căn hộ chung cư' : 'Văn phòng làm việc',
         message: message || '',
-        submittedAt: new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }),
+        submittedAt,
       }),
     });
 
@@ -97,3 +143,4 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Lỗi máy chủ nội bộ' }, { status: 500 });
   }
 }
+

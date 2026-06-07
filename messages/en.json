@@ -21,6 +21,8 @@
     "consultationDesc": "Leave your information to receive a direct consultation from Kayla Nguyen.",
     "submitting": "Submitting...",
     "submitSuccess": "Submission successful! We will contact you soon.",
+    "submitSuccessDesc": "Thank you for your trust. Kayla Nguyen will contact you as soon as possible.",
+    "sendAnother": "Send another request",
     "submitError": "An error occurred, please try again later.",
     "notAvailable": "Not available",
     "furnished": "Furnishing",

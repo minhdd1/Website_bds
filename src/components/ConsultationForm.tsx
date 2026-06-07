@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function ConsultationForm() {
@@ -14,6 +14,13 @@ export default function ConsultationForm() {
     message: ''
   });
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status === 'success' && containerRef.current) {
+      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [status]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,16 +49,34 @@ export default function ConsultationForm() {
     }
   };
 
+  if (status === 'success') {
+    return (
+      <div 
+        ref={containerRef}
+        className="w-full bg-linen border border-stone/40 p-8 md:p-10 rounded-sm shadow-sm text-center py-12 transition-editorial"
+      >
+        <div className="w-16 h-16 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="font-serif text-2xl mb-3 text-charcoal">{commonT('submitSuccess')}</h3>
+        <p className="text-sm text-charcoal/60 mb-8 max-w-md mx-auto">{commonT('submitSuccessDesc')}</p>
+        <button
+          type="button"
+          onClick={() => setStatus('idle')}
+          className="bg-charcoal hover:bg-clay-accent text-ivory text-xs uppercase tracking-widest font-semibold py-3.5 px-8 transition-editorial"
+        >
+          {commonT('sendAnother')}
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full bg-linen border border-stone/40 p-8 md:p-10 rounded-sm shadow-sm transition-editorial">
       <h3 className="font-serif text-2xl mb-2 text-charcoal">{commonT('consultation')}</h3>
       <p className="text-sm text-charcoal/60 mb-8">{commonT('consultationDesc')}</p>
-
-      {status === 'success' && (
-        <div className="p-4 mb-6 text-sm text-sage bg-sage/10 border border-sage/20 rounded">
-          {commonT('submitSuccess')}
-        </div>
-      )}
 
       {status === 'error' && (
         <div className="p-4 mb-6 text-sm text-clay bg-clay/10 border border-clay/20 rounded">
